@@ -1,127 +1,35 @@
-# SmartPoultryPro
+### **Objectif**
+Plateforme SaaS B2B optimisant la productivité des élevages avicoles grâce à l'IA.
 
-#  Cahier des Charges - SmartFlocks
-*Plateforme IA pour l'Élevage Avicole - Version Entreprise*
+### **Architecture Microservices Essentielle**
+```
+✅ Service Authentification - Spring Boot
+✅ Service Élevage - Spring Boot  
+✅ Service Vision IA - Python/FastAPI (analyse santé poulets)
+✅ Service RAG Avicole - Python/FastAPI (assistant expert)
+✅ Frontend - Next.js 14
+```
 
-##  **Objectif Stratégique**
-Développer une solution SaaS B2B innovante optimisant la productivité et la rentabilité des élevages avicoles grâce à l'intelligence artificielle.
+### **Fonctionnalités Prioritaires**
+- **Gestion élevage** : Fermes, poulaillers, troupeaux
+- **Vision IA** : Analyse santé poulets par images
+- **Assistant RAG** : Chatbot expert avicole
+- **Dashboard** : Visualisation données et prédictions
 
----
+### **Stack Technique**
+- **Backend** : Spring Boot (métier) + Python/FastAPI (IA)
+- **Frontend** : Next.js 14 + Tailwind CSS
+- **Base de données** : PostgreSQL
+- **Cloud** : Google Cloud Run + Cloud SQL
+- **CI/CD** : GitHub Actions
 
-##  **Architecture Microservices**
+### **Planning Accéléré (8 semaines)**
+- **Semaines 1-4** : MVP (Auth + Vision IA + Dashboard)
+- **Semaines 5-8** : Services RAG + Élevage + Optimisations
 
-### **Services Principaux**
-1. **Service Authentification** - Gestion sécurisée des utilisateurs et accès
-2. **Service Élevage** - Gestion fermes, poulaillers, troupeaux
-3. **Service Production** - Suivi œufs, croissance, indicateurs techniques  
-4. **Service IA & Analytics** - Reconnaissance image, prédictions, optimisation
-5. **Service Assistant RAG** - Base connaissances, chatbot expert
-6. **Service Commercial** - Clients, commandes, facturation, prix dynamique
-7. **Service Notification** - Alertes, rapports, communications
+### **Différenciation Clé**
+- **Architecture hybride** Spring Boot + Python
+- **Services IA production-ready** déployés sur cloud
+- **Pipeline MLOps complet** avec CI/CD
 
----
-
-##  **Fonctionnalités Principales**
-
-### **Module Gestion d'Élevage**
-- Gestion multi-fermes et multi-poulaillers
-- Suivi des lots de poulets (naissance à vente)
-- Documentation sanitaire et registres obligatoires
-- Gestion du cycle de production complet
-
-### **Module Production & Suivi**
-- Saisie quotidienne production œufs
-- Suivi poids et croissance des poulets
-- Calcul automatique des indices techniques (IC, PM)
-- Alertes automatiques sur seuils critiques
-
-### **Module IA Innovant**
-- **Reconnaissance visuelle** : Analyse santé poulets par images
-- **Prédictions production** : Prévision rendements et planning
-- **Optimisation alimentation** : Recommandations nutrition IA
-- **Détection anomalies** : Alertes précoces problèmes sanitaires
-
-### **Module Assistant Expert (RAG)**
-- Base de connaissances avicole complète
-- Chatbot contextuel pour questions techniques
-- Recommandations personnalisées par élevage
-- Veille réglementaire automatique
-
-### **Module Commercial**
-- Gestion clientèle et historique des ventes
-- Système de facturation intégré
-- **Prix dynamique IA** : optimisation basée sur marché
-- Analyse rentabilité par lot et produit
-
----
-
-##  **Stack Technique**
-
-### **Backend & Infrastructure**
-- **Architecture** : Microservices Spring Boot
-- **API Gateway** : Routage et sécurité centralisée
-- **Bases de données** : PostgreSQL + TimescaleDB + Redis
-- **Message Broker** : RabbitMQ pour communication asynchrone
-- **Service Discovery** : Gestion dynamique des services
-
-### **Frontend & Mobile**
-- **Web Application** : Next.js 14+ avec App Router
-- **Styling** : Tailwind CSS + composants modulaires
-- **Mobile** : PWA pour usage terrain hors-ligne
-- **Dashboard** : Temps réel avec websockets
-
-### **Intelligence Artificielle**
-- **Computer Vision** : Analyse images poulets et œufs
-- **Machine Learning** : Prédictions et optimisation
-- **RAG System** : Base vectorielle + LLM expert
-- **Traitement Langage** : Chatbot conversationnel
-
----
-
-##  **Exigences Techniques**
-
-### **Performance**
-- Temps réponse API : < 200ms
-- Disponibilité : 99.9%
-- Support 1000+ élevages simultanés
-- Synchronisation données hors-ligne
-
-### **Sécurité**
-- Authentification JWT multi-niveaux
-- RBAC (Role-Based Access Control)
-- Chiffrement données sensibles
-- Audit logs complets et traçabilité
-
-### **Intégrations**
-- APIs RESTful documentées
-- Webhooks pour notifications externes
-- Export données standards (PDF, Excel, CSV)
-- APIs tierces (météo, marchés, réglementation)
-
----
-
-##  **Plan de Développement**
-
-### **Phase 1 - MVP (8 semaines)**
-- Architecture microservices de base
-- Services Authentification, Élevage, Production
-- Dashboard essentiel et saisie données
-- Déploiement environnement dev/test
-
-### **Phase 2 - IA & Analytics (6 semaines)**
-- Intégration services IA et Assistant
-- Reconnaissance image basique
-- Chatbot RAG et prédictions simples
-- Analytics dashboard avancé
-
-### **Phase 3 - Commercial & Scale (6 semaines)**
-- Module commercial complet
-- Système facturation et paiements
-- Optimisations performance
-- Préparation scale enterprise
-
-### **Phase 4 - Innovation (4 semaines)**
-- Fonctionnalités IA avancées
-- Intégrations IoT et capteurs
-- Marketplace et écosystème
-- Mobile app native
+**→ Focus sur 2-3 microservices déployés plutôt qu'une plateforme complète**
