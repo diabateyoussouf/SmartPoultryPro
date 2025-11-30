@@ -10,6 +10,7 @@ Plateforme SaaS B2B optimisant la productivité des élevages avicoles grâce à
 ✅ Frontend - Next.js 14
 ```
 # Structure idéale :
+```
 github.com/ton-username/
 ├── smartflocks-auth          (Spring Boot)
 ├── smartflocks-farm          (Spring Boot)  
@@ -17,7 +18,7 @@ github.com/ton-username/
 ├── smartflocks-rag           (Python/FastAPI)
 ├── smartflocks-frontend      (Next.js 14)
 └── smartflocks-infra         (Docker, CI/CD, docs)
-
+```
 ### **Fonctionnalités Prioritaires**
 - **Gestion élevage** : Fermes, poulaillers, troupeaux
 - **Vision IA** : Analyse santé poulets par images
